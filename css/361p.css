@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*111111*/
+.section {
+    overflow: hidden;
+}
+.first {
+    padding-top: 70px;
+}
+.first .logo {
+    width: 251px;
+    height: 186px;
+    margin:0 auto;
+}
+.first .text {
+    text-align: center;
+    margin-top: 60px;
+}
+.first .text>img {
+    margin: 0 30px;
+    transition: margin 1s;
+}
+.first .info1 {
+    width: 772px;
+    height: 49px;
+    margin: 30px auto;
+}
+/*111动画效果*/
+.first.current .text>img {
+    margin: 0 5px;
+}
+/*222222222222*/
+.second >div{
+    /*position: relative;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.second .shield {
+    width: 440px;
+    font-size: 0;
+    /*不能定位切记*/
+   /* position: absolute;
+    left: 0;
+    top:0;*/
+}
+.second .shield>img {
+    transition: transform 1s;
+}
+.second .info2 {
+    width: 635px;
+    height: 309px;
+   /* position: absolute;
+    right: 0;
+    top:0;*/
+}
+.second .shield  > img:nth-of-type(1) {
+    transform:translate(50px,30px) rotate(-330deg);
+}
+.second .shield  > img:nth-of-type(2) {
+    transform:translate(-50px,10px) rotate(-100deg);
+}
+.second .shield  > img:nth-of-type(3) {
+    transform:translate(50px) rotate(-30deg);
+}
+.second .shield  > img:nth-of-type(4) {
+    transform:translate(20px,50px) rotate(130deg);
+}
+.second .shield  > img:nth-of-type(5) {
+    transform:translate(50px,30px) rotate(30deg);
+}
+.second .shield  > img:nth-of-type(6) {
+    transform:translate(-150px,100px) rotate(320deg);
+}
+.second .shield  > img:nth-of-type(7) {
+    transform:translate(50px) rotate(300deg);
+}
+.second .shield  > img:nth-of-type(8) {
+    transform:translate(100px, -50px) rotate(-30deg);
+}
+.second .shield  > img:nth-of-type(9) {
+    transform:translate(50px) rotate(60deg);
+}
+.sceond.current .shield>img {
+    transform: none;
+}
+/*333333*/
+.thrth {
+    position: relative;
+}
+.thrth .info3 {
+    width: 631px;
+    height: 278px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform:translate(-100%,-50%);
+}
+.thrth .three{
+    width: 453px;
+    height: 449px;
+    position: absolute;
+    right: 50%;
+    top:50%;
+    transform:translate(120%,-50%);
+}
+.thrth .rocket{
+    width: 203px;
+    height: 204px;
+    position: absolute;
+    right: 50%;
+    top:50%;
+    /*transform:translate(200%,-50%);*/
+    transform:translate(0,300%);
+    transition: transform 0.5s;
+}
+.thrth.current .rocket {
+    transform: translate(200%,-50%);
+}
+/*44444444444444*/
+
+
+
+

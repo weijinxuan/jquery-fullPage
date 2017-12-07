@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/360p.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+</head>
+<body>
+ <div id="360Page">
+     <div class="section first">
+         <div class="logo">
+             <!--<img src="" alt="">-->
+         </div>
+         <div class="next">
+             <img src="images/text_1.png" alt="">
+             <img src="images/text_2.png" alt="">
+             <img src="images/text_3.png" alt="">
+             <img src="images/text_4.png" alt="">
+             <img src="images/text_5.png" alt="">
+             <img src="images/text_6.png" alt="">
+             <img src="images/text_7.png" alt="">
+             <img src="images/text_8.png" alt="">
+         </div>
+         <div class="next1"></div>
+     </div>
+     <div class="section second">
+         <div class="text">
+             <img src="images/shield_1.png" alt="">
+             <img src="images/shield_2.png" alt="">
+             <img src="images/shield_3.png" alt="">
+             <img src="images/shield_4.png" alt="">
+             <img src="images/shield_5.png" alt="">
+             <img src="images/shield_6.png" alt="">
+             <img src="images/shield_7.png" alt="">
+             <img src="images/shield_8.png" alt="">
+             <img src="images/shield_9.png" alt="">
+         </div>
+         <div class="info"></div>
+     </div>
+     <div class="section three">
+         <div class="info3"></div>
+         <div class="circle">
+             <div class="rocket"></div>
+         </div>
+     </div>
+     <div class="section fouth">
+         <div class="furth">
+            <div class="search"></div>
+            <div class="key"></div>
+            <div class="result"></div>
+         </div>
+         <div class="info4"></div>
+     </div>
+     <div class="section five">
+         <div class="info5"></div>
+         <div class="tool1">
+             <div class="tool"></div>
+             <idv class="tool2"></idv>
+             <div class="extra1">
+                <div class="extra"></div>
+             </div>
+         </div>
+
+
+     </div>
+ </div>
+ <script>
+     $(function(){
+        $("#360Page").fullpage({
+            sectionsColor:["red", "blue","#ff3040","pink","skyblue"],
+            afterLoad:function(anchorLink,index){
+                console.log(index);
+
+                $(".section").removeClass("current");
+                setTimeout(function(){
+                    $(".section").eq(index-1).addClass("current");
+                },500)
+
+            }
+
+        });
+     });
+
+ </script>
+
+</body>
+</html>
